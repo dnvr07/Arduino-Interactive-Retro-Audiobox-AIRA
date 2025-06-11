@@ -2,15 +2,15 @@
 
 #include <SD.h>          // SD card library
 #include <SPI.h>         // SPI communication (used by SD card)
-#include <TMRpcm.h>      // Audio playback library (speaker_play_tmrpcm)
+#include <TMRpcm.h>      // Audio playback library (speaker_play_tmrpcm) 
 #define SD_ChipSelectPin 10 // Define SD card CS (Chip Select) pin
 
-#include <ServoTimer2.h>  ///#include <Servo.h> // Use this instead of <Servo.h> 
+#include <ServoTimer2.h>  //Instead of #include <Servo.h> to prevent conflict from  two libraries utilizing the same timer. Add ServoTimer2 library through library manager.
 
-TMRpcm tmrpcm; // Creates TMRpcm object for audio playback
-ServoTimer2 mymotor;
 const int IRpin = 6;  // IR sensor connected here
 const int LEDpin = 7; // LED connected here
+TMRpcm tmrpcm; // Creates TMRpcm object for audio playback
+ServoTimer2 mymotor;
 
 bool systemRunning = false;  // Track if music+servo+led are running
 
