@@ -1,4 +1,4 @@
-## Arduino-Music-Box
+## Arduino Music Box
 An Arduino Uno-powered music box with Infrared sensor, lights, servo motor, and SD card audio playback.
 
 This is an interactive music box project powered by an Arduino Uno.
