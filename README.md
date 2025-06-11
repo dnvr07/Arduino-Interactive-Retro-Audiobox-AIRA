@@ -14,6 +14,7 @@ When the lid is taken off, the system automatically:
 - LED
 - SD card module + microSD card
 - Speaker
+- BD139 Transistor (for speaker amplification)
 - Servo motor
 
 ## License
