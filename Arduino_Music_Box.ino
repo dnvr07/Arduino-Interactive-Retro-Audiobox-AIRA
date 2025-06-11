@@ -1,5 +1,8 @@
 // Arduino Music Box by dnvr07
 
+// Refer to git-hardware for wiring diagram
+// Refer to git-assets for instructions on how to configure audio file compatibility
+
 #include <SD.h>          // SD card library
 #include <SPI.h>         // SPI communication (used by SD card)
 #include <TMRpcm.h>      // Audio playback library (speaker_play_tmrpcm) 
@@ -44,7 +47,7 @@ void loop() {
       tmrpcm.play("song.wav");
       tmrpcm.loop(true);
     } else {
-      Serial.println("SONG NOT FOUND");
+      Serial.println("SONG NOT FOUND"); 
     }
     digitalWrite(LEDpin, HIGH); // Turn LED ON
     mymotor.write(1550); // Start servo rotation. Send a 1550 µs pulse, the slowest I came without the servo stopping.
